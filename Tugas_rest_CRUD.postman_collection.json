@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "561c0076-42b3-4a40-8329-863fc36de65d",
+		"name": "Tugas_rest_CRUD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30347431"
+	},
+	"item": [
+		{
+			"name": "http://localhost/restapi/list.php",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/restapi/list.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"restapi",
+						"list.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/restapi/create.php",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "coba",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "wow",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/restapi/create.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"restapi",
+						"create.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/restapi/update.php",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "edited title",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "edited content",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/restapi/update.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"restapi",
+						"update.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/restapi/delete.php",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/restapi/delete.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"restapi",
+						"delete.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
